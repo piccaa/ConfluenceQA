@@ -57,9 +57,14 @@ public class Sign_up extends common_functions{
 		 sleep(3000);
 		 random_Selection( Resources_Utility.xpath("state_list"),  driver);
          sleep(2000);
+         
+		 click(Resources_Utility.xpath("city"), driver);
+		 sleep(3000);
+		 random_Selection( Resources_Utility.xpath("city_list"),  driver);
+         sleep(2000);
        
          
-		 type(Resources_Utility.xpath("city"), Resources_Utility.config("city") , driver);
+	//	 type(Resources_Utility.xpath("city"), Resources_Utility.config("city") , driver);
 			sleep(2000);
 		 type(Resources_Utility.xpath("password"),Resources_Utility.config("password"), driver);
 	sleep(1000);
