@@ -11,7 +11,9 @@
 	<classes>
 			
 			
-			  <class name="PageAutomation.Sign_up" />
+			<!--  <class name="PageAutomation.Sign_up" /> -->
+			  <class name="PageAutomation.My_Profile" />
+			  
 			 
   </classes>
   </test> <!-- Test -->

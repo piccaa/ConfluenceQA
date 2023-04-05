@@ -8,12 +8,12 @@
       </run>
     </groups>
     <classes>
-      <class name="PageAutomation.Sign_up">
+      <class name="PageAutomation.My_Profile">
         <methods>
           <include name="sign_up_testing"/>
           <include name="login"/>
         </methods>
-      </class> <!-- PageAutomation.Sign_up -->
+      </class> <!-- PageAutomation.My_Profile -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

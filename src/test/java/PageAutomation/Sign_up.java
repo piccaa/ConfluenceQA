@@ -21,8 +21,8 @@ public class Sign_up extends common_functions{
 	Faker faker = new Faker();
 	String name ;
 	 
-	String num1="88"+faker.number().digits(8);
-	//int mob=Integer.parseInt(num1);
+	String number="88"+faker.number().digits(8);
+	
 	@Test(enabled = true, priority = 1,groups= {"Common"})
 	public void sign_up_testing() throws Throwable {
 	click(Resources_Utility.xpath("create_acc"), driver);
@@ -32,15 +32,14 @@ public class Sign_up extends common_functions{
     sleep(1000);
     click(Resources_Utility.xpath("submit_btn"), driver);
 	
-	//click(Resources_Utility.xpath("login_btn"), driver);
 	sleep(1000);
 	type(Resources_Utility.xpath("name"), faker.name().firstName() , driver);
 	sleep(1000);
-	//type(Resources_Utility.xpath("name"),faker.name().lastName(),driver);
-	//sleep(1000);
-	type(Resources_Utility.xpath("mobile"),num1, driver);
+	
+	
+	type(Resources_Utility.xpath("mobile"),number, driver);
 	 sleep(1000);
-	//type(Resources_Utility.xpath("mobile"),faker.number().digits(8), driver);
+	
 	 sleep(1000);
 	 click(Resources_Utility.xpath("send_otp"), driver);
 	 sleep(2000);
@@ -67,8 +66,7 @@ public class Sign_up extends common_functions{
          sleep(2000);
        
          
-	//	 type(Resources_Utility.xpath("city"), Resources_Utility.config("city") , driver);
-			sleep(2000);
+
 		 type(Resources_Utility.xpath("password"),Resources_Utility.config("password"), driver);
 	sleep(1000);
 	
