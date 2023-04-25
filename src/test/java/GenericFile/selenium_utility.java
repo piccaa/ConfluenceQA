@@ -261,8 +261,9 @@ public class selenium_utility  {
 		try {
 			value = driver.findElement(By.xpath(path)).getText();
 		}catch (Exception e) {
-			e.printStackTrace();
+		//	e.printStackTrace();
 		}
+		
 		return value;
 	}
 

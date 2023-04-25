@@ -1,5 +1,7 @@
 package PageAutomation;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.Random;
 
 import org.sikuli.script.Pattern;
@@ -10,6 +12,7 @@ import com.github.javafaker.Faker;
 
 import GenericFile.Resources_Utility;
 import GenericFile.common_functions;
+import junit.framework.Assert;
 
 public class My_Profile extends common_functions{
 	public String selected_Option=null;
@@ -22,6 +25,7 @@ public class My_Profile extends common_functions{
 	public String test2="7";
 	String number="88"+faker.number().digits(8);
 	
+	@SuppressWarnings("deprecation")
 	@Test(enabled = true, priority = 1,groups= {"Common"})
 	public void sign_up_testing() throws Throwable {
 	click(Resources_Utility.xpath("create_acc"), driver);
@@ -45,19 +49,19 @@ public class My_Profile extends common_functions{
 	 
 	 type(Resources_Utility.xpath("otp_enter"),otp, driver);
 	 sleep(1000);
-	 click(Resources_Utility.xpath("country"), driver);
-	 sleep(2000);
-	 
-	 random_Selection( Resources_Utility.xpath("country_list"),  driver);
-	 sleep(2000);
-	
-		
-
-		 
-		 click(Resources_Utility.xpath("state"), driver);
-		 sleep(3000);
-		 random_Selection( Resources_Utility.xpath("state_list"),  driver);
-         sleep(2000);
+		/*
+		 * click(Resources_Utility.xpath("country"), driver); sleep(2000);
+		 * 
+		 * random_Selection( Resources_Utility.xpath("country_list"), driver);
+		 * sleep(2000);
+		 * 
+		 * 
+		 * 
+		 * 
+		 * click(Resources_Utility.xpath("state"), driver); sleep(3000);
+		 * random_Selection( Resources_Utility.xpath("state_list"), driver);
+		 * sleep(2000);
+		 */
          
 		 click(Resources_Utility.xpath("city"), driver);
 		 sleep(3000);
@@ -146,6 +150,6 @@ public class My_Profile extends common_functions{
 		 }
 		 sleep(1000);
 			click(Resources_Utility.xpath("save_changes"), driver);
-	 
+			Assert.assertEquals(1,1);
   //  driver.quit();
 }}

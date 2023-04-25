@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+<listeners>
+  	<listener class-name="PageAutomation.ExtentReportsm" />
+  </listeners>
   <test  name="Test">
+  <parameter name="browser" value="chrome"/>
+
+<parameter name="url" value="https://confluenceqa.mindler.com/"/>
   	<groups>
 		<run>	
 			<include name="Common"></include>	
@@ -9,10 +15,11 @@
 		</run>
 	</groups>
 	<classes>
+					
+			  <class name="PageAutomation.Sign_up" /> 
+			  <!-- <class name="PageAutomation.My_Profile" /> -->
+			<!--   <class name="PageAutomation.Assessment" /> -->
 			
-			
-			<!--  <class name="PageAutomation.Sign_up" /> -->
-			  <class name="PageAutomation.My_Profile" />
 			  
 			 
   </classes>

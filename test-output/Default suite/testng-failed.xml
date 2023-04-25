@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PageAutomation.My_Profile">
+      <class name="PageAutomation.WriteTxt">
         <methods>
-          <include name="sign_up_testing"/>
-          <include name="login"/>
+          <include name="print_in_txt"/>
+          <include name="Setup"/>
         </methods>
-      </class> <!-- PageAutomation.My_Profile -->
+      </class> <!-- PageAutomation.WriteTxt -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

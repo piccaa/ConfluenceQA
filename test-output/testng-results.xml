@@ -2,23 +2,35 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-05T13:44:49 IST" name="Suite" finished-at="2023-04-05T13:46:51 IST" duration-ms="122184">
+  <suite started-at="2023-04-21T11:59:37 IST" name="Suite" finished-at="2023-04-21T12:00:56 IST" duration-ms="78834">
     <groups>
       <group name="Common">
-        <method signature="My_Profile.sign_up_testing()[pri:1, instance:PageAutomation.My_Profile@7d900ecf]" name="sign_up_testing" class="PageAutomation.My_Profile"/>
+        <method signature="print_in_excel.excel()[pri:1, instance:PageAutomation.print_in_excel@7f485fda]" name="excel" class="PageAutomation.print_in_excel"/>
       </group> <!-- Common -->
     </groups>
-    <test started-at="2023-04-05T13:44:49 IST" name="Test" finished-at="2023-04-05T13:46:51 IST" duration-ms="122184">
-      <class name="PageAutomation.My_Profile">
-        <test-method is-config="true" signature="login()[pri:0, instance:PageAutomation.My_Profile@7d900ecf]" started-at="2023-04-05T13:44:45 IST" name="login" finished-at="2023-04-05T13:44:49 IST" duration-ms="3668" status="PASS">
+    <test started-at="2023-04-21T11:59:37 IST" name="Test" finished-at="2023-04-21T12:00:56 IST" duration-ms="78834">
+      <class name="PageAutomation.print_in_excel">
+        <test-method is-config="true" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:PageAutomation.print_in_excel@7f485fda]" started-at="2023-04-21T11:59:37 IST" name="Setup" finished-at="2023-04-21T12:00:55 IST" duration-ms="77603" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://tax.gov.ae/en/tax.support/tax.agents/registered.tax.agents.aspx]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="sign_up_testing()[pri:1, instance:PageAutomation.My_Profile@7d900ecf]" started-at="2023-04-05T13:44:49 IST" name="sign_up_testing" finished-at="2023-04-05T13:46:51 IST" duration-ms="122145" status="PASS">
+        </test-method> <!-- Setup -->
+        <test-method signature="excel()[pri:1, instance:PageAutomation.print_in_excel@7f485fda]" started-at="2023-04-21T12:00:55 IST" name="excel" finished-at="2023-04-21T12:00:56 IST" duration-ms="1182" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sign_up_testing -->
-      </class> <!-- PageAutomation.My_Profile -->
+        </test-method> <!-- excel -->
+      </class> <!-- PageAutomation.print_in_excel -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
